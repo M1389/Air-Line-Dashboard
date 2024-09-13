@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 10px;
+}
+
+/* Header Image style goes here */
+
+header {
+  height: 200px;
+  background-color: yellow;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Header Image style ends here */
+
+/* Form Styles starts here */
+
+.inputArea {
+  background-color: transparent;
+  border: 2px solid black;
+  width: 70%;
+  margin: 50px auto;
+  padding: 35px;
+  border-radius: 30px;
+}
+
+.inputArea input {
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin: 10px;
+  font-family: "Outfit", system-ui;
+  transition: all 0.5s;
+  border: 1px solid blue;
+}
+
+.inputArea input:focus {
+  border: 1px solid blue;
+}
+
+.inputArea label {
+  font-size: 20px;
+  font-family: "Young Serif", system-ui;
+}
+
+.inputArea select {
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.inputArea button {
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-family: "Young Serif", system-ui;
+}
+
+.saveRes {
+  background-color: rgb(72, 163, 255);
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.showRes {
+  background-color: rgb(60, 207, 27);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.filterBtn {
+  background-color: black;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.filterBtn:hover,
+.showRes:hover,
+.saveRes:hover {
+  border-radius: 10px;
+}
+
+/* Form Styles ends here */
+
+/* Table styles starts Here */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: #fff;
+  min-height: 100px;
+}
+
+th {
+  color: #eb984e;
+  font-family: "Young Serif", system-ui;
+  margin-bottom: 10px;
+  background-color: #d5dbdb;
+  font-size: 22px;
+}
+
+td {
+  color: black;
+  font-family: "Outfit", system-ui;
+  text-align: center;
+  border-bottom: 2px solid rgb(76, 76, 76);
+  background-color: #eb984e;
+  font-size: 19px;
+}
+
+.resultContainer > p {
+  font-family: "Outfit", system-ui;
+  font-size: 25px;
+  font-weight: 600;
+}
+/* Table styles ends Here */

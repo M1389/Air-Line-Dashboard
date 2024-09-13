@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="./assets/FavIcon/icons8-airplane-96.png">
+    <title>Airlines Dashboard</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/images/ZpBc9lZ-airplane-wallpapers.jpg" alt="AirPlane">
+    </header>
+    <div class="inputArea">
+        <label for="flightNum">Flight Number:</label>
+        <input id="flightNum" type="text" placeholder="Flight Number">
+        <label for="passengerName">Passenger Name: </label>
+        <input id="passengerName" type="text" placeholder="Passenger Name">
+        <br>
+        <label for="priceIn">Price Of Ticket:</label>
+        <input id="priceIn" type="text" placeholder="Price">
+        <label for="airLineInput">Air Lines:</label>
+        <select name="airLineInput" id="airLinePick">
+            <option value="iranAir">Iran AirLine</option>
+            <option value="mahanAir">Mahan AirLine</option>
+            <option value="KishAir">Kish AirLine</option>
+            <option value="qeshmAir">Qeshm AirLine</option>
+            <option value="tabanAir">Taban AirLine</option>
+        </select>
+        <button class="saveRes">Save</button>
+        <button class="showRes">Show Results</button>
+        <br>
+        <select name="filter" id="filter">
+            <option value="lineOne">Iran AirLine</option>
+            <option value="lineTwo">Mahan AirLine</option>
+            <option value="lineThree">Kish AirLine</option>
+            <option value="lineFour">Qeshm AirLine</option>
+            <option value="lineFive">Taban AirLine</option>
+        </select>
+        <button class="filterBtn">Filter</button>
+        <table id="tableData">
+            <tr>
+                <th>Flight Number</th>
+                <th>Passenger Name</th>
+                <th>Price</th>
+                <th>AirLine</th>
+            </tr>
+        </table>
+        <div class="resultContainer"></div>
+            
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
